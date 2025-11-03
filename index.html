@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: #ccc;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página de Teste</h1>
+        <p>Ambiente de validação HTML + CSS + JS</p>
+    </header>
+
+    <main>
+        <h2>Seja bem-vindo!</h2>
+        <p>Esta é apenas uma página de teste para verificar estilos e scripts básicos.</p>
+        <button id="botaoTeste">Clique aqui</button>
+        <p id="mensagem"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Página de Teste HTML</p>
+    </footer>
+
+    <script>
+        document.getElementById('botaoTeste').addEventListener('click', () => {
+            document.getElementById('mensagem').textContent = "Botão clicado com sucesso!";
+        });
+    </script>
+</body>
+</html>
