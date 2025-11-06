@@ -14,11 +14,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #9333ea55;
+    margin-bottom: 20px;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #c084fc;
   }
@@ -33,6 +42,7 @@
   #countdown {
     display: flex;
     gap: 15px;
+    margin-top: 10px;
   }
 
   .time-box {
@@ -69,13 +79,15 @@
 </head>
 <body>
 
-  <h1>🎉 Contagem Regressiva para o Niver da Day 🎂</h1>
+  <!-- FOTO DELA -->
+  <img src="F3422E00-48F3-4235-A81B-66A67D9570C2.jpeg" alt="Dayanna Mendes">
+
+  <h1>🎯 A contagem começou — o primeiro aniversário dela comigo 🎂</h1>
 
   <p>
-    O primeiro aniversário dela que vou acompanhar de perto.  
-    Cada dia que passa, é mais uma página dessa história que começou  
-    por acaso, mas vem ficando impossível de esquecer. 💜  
-    Faltam poucos dias pra celebrar quem trouxe leveza, presença e cor pra esse ano.  
+    Essa é a Day. De alma firme e olhar certeiro, do tipo que acerta o alvo até sem mirar.  
+    Chegou mudando o ritmo dos dias e transformando o que era comum em algo vivo.  
+    Esse será o primeiro aniversário dela comigo — e não é sobre presente, é sobre presença. 💜  
   </p>
 
   <div id="countdown">
@@ -107,7 +119,7 @@ function updateCountdown() {
   const diff = targetDate - now;
 
   if (diff <= 0) {
-    document.getElementById("final-msg").innerHTML = "💫 Chegou o dia dela! O primeiro de muitos aniversários juntos. 💜";
+    document.getElementById("final-msg").innerHTML = "💫 Chegou o dia dela. O primeiro de muitos aniversários juntos. 💜";
     document.getElementById("countdown").style.display = "none";
     clearInterval(timer);
     return;
